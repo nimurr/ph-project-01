@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+header{
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: aliceblue;
+}
+header h2{
+    font-size: 50px; 
+}
+header p{
+    margin: 15px 0;
+}
+header button{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+}
+.blogs-1{
+    background: orange;
+    /* padding-top: 10px; */
+    padding: 100px;
+}
+.blogs-1 .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px , 1fr)) ;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogs-1 .container .row h2{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.blogs-1 .container .row p{
+    color: #eeeeee;
+    font-size: 16px;
+}
+.blogs-1 .container .row img{
+    width: 100%;
+}
+
+
+
+/*------------ blogs 2 ------------- */
+.blogs-2 {
+    background: #000;
+    padding: 100px;
+}
+.blogs-2 .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px , 1fr)) ;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogs-2 .container .row img{
+    width: 100%;
+}
+.blogs-2 .container .row h2{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.blogs-2 .container .row p{
+    color: #eeeeee;
+}
+@media screen and  (max-width:800px){
+    .blogs-1, .blogs-2{
+        padding: 50px;
+    }
+}
+@media screen and  (max-width:500px){
+    .blogs-1, .blogs-2{
+        padding: 20px;
+    }
+    .blogs-2 .container .row img{
+        width: 300px;
+    }
+    .blogs-1 .container .row img{
+        width: 300px;
+    }
+    .blogs-1 .container .row h2{
+        font-size: 25px; 
+    }
+    .blogs-2 .container .row h2{
+        font-size: 25px; 
+    }
+    .blogs-1 .container .row p{
+        font-size: 10px; 
+         width: 80%;
+    }
+    .blogs-2 .container .row .col-6 p{
+         width: 80%; 
+         font-size: 10px;
+    }
+}
